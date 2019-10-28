@@ -49,7 +49,12 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word with identical contents in reverse order with the first character capitalized
      */
     public static String reverseFirstWordThenCamelCase(String sentence) {
-        return null;
+        String result = sentence.split(" ")[0];
+        String reverse = "";
+        for(int i = sentence.length() - 1; i >= 0; i--){
+            reverse = reverse + sentence.charAt(i);
+        }
+        return result.substring(0,1).toUpperCase()+ result.substring(1);
     }
 
 
