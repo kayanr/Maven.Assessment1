@@ -11,7 +11,13 @@ public class ArrayUtils {
      * Given an array of objects, named `objectArray`, and an object `objectToCount`, return the number of times the `objectToCount` appears in the `objectArray`
      */
     public static Integer getNumberOfOccurrences(Object[] objectArray, Object objectToCount) {
-        return null;
+        int count = 0;
+
+        for(int i = 0; i < objectArray.length; i++) {
+            if(objectToCount == objectArray[i])
+                count++;
+        }
+        return count;
     }
 
     /**
@@ -21,7 +27,11 @@ public class ArrayUtils {
      * Given an array of objects, name `objectArray`, and an object `objectToRemove`, return an array of objects with identical contents excluding `objectToRemove`
      */
     public static Object[] removeValue(Object[] objectArray, Object objectToRemove) {
-        return null;
+        for(Object i = objectToRemove; i < objectArray.length -1; i++){
+            objectArray[i] = objectArray[i + 1];
+        }
+
+
     }
 
     /**
@@ -30,6 +40,9 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the most frequently occuring object in the array
      */
     public static Object getMostCommon(Object[] objectArray) {
+        for(int i = 0; i < objectArray.length; i++){
+
+        }
         return null;
     }
 
