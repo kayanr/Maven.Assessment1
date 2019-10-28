@@ -30,7 +30,7 @@ public class BasicArrayUtils {
 
 
         return stringArray[2];
-    }git 
+    }
 
     /**
      * @param stringArray an array of String objects
