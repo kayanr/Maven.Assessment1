@@ -26,7 +26,9 @@ public class ArrayUtils {
      * @return an array with identical content excluding the specified `objectToRemove`
      * Given an array of objects, name `objectArray`, and an object `objectToRemove`, return an array of objects with identical contents excluding `objectToRemove`
      */
-    public static Object[] removeValue(Object[] objectArray, Object objectToRemove) { return null;
+    public static Object[] removeValue(Object[] objectArray, Object objectToRemove) {
+        return null;
+
     }
 
     /**
@@ -55,6 +57,8 @@ public class ArrayUtils {
      * given two arrays `objectArray` and `objectArrayToAdd`, return an array containing all elements in `objectArray` and `objectArrayToAdd`
      */
     public static Object[] mergeArrays(Object[] objectArray, Object[] objectArrayToAdd) {
-        return null;
+        Object[] result = objectArray + objectArrayToAdd;
+
+        return result;
     }
 }

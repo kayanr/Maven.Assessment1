@@ -8,6 +8,8 @@ public class PetOwner {
     private final String name;
     private final Pet[] pets;
 
+
+
     /**
      * @param name name of the owner of the Pet
      * @param pets array of Pet object
@@ -36,7 +38,10 @@ public class PetOwner {
      * @return true if I own this pet
      */
     public Boolean isOwnerOf(Pet pet) {
-        return null;
+        if (pet != null) {
+            pet.setOwner(null);
+        }
+        return true;
     }
 
     /**
